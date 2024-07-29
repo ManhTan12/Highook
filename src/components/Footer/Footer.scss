@@ -1,0 +1,99 @@
+.footer{
+    max-width: 100%;
+    background-color: #f5f5f5;
+    .top{
+        display: flex;
+        width: 70%;
+        padding: 30px 0px;
+        margin: 0 auto;
+        justify-content: space-between;
+        //border-bottom: 1px solid #C0aC88 ;
+        .left{
+            .text-shop{
+                color: #1C1A18;
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+            .text{
+                font-size: 12px;
+                color: #1C1A18;
+                font-weight: normal;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .icon{
+                img{
+                    height: 24px;
+                    width: 35px;
+                    margin-right: 10px;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .right{
+            margin-right: 30px;
+            h5{
+                line-height: 1.2;
+                font-size: 16px;
+                font-weight: 500;
+                font-style: normal;
+                color: #555;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 12px;
+                color: #777;
+                font-weight: 400;
+                font-style: normal;
+                margin-bottom: 15px;
+            }
+            .email{
+                input{
+                    font-size: .97em;
+                    height: 2.507em;
+                    max-width: 100%;
+                    padding: 0 .75em;
+                    border: none;
+                    outline: none;
+                    margin-right: 20px;
+                }
+                span{
+                    background-color: #C8b288;
+                    padding: 10px 20px;
+                    color: white;
+                    font-weight: 600;
+                }
+            }
+            .icon{
+                margin-top: 50px;
+                img{
+                    height: 33px;
+                    width: 33px;
+                    margin-right: 10px;
+                    
+                }
+            }
+        }
+    }
+    .center{
+        max-width: 2000px;
+        height: 1px;
+        background-color: rgb(192, 172, 136);
+    }
+    .bottom{
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 15px 0 20px 0;
+        .left{
+            display: flex;
+            gap: 25px;
+        }
+        .right{
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.collection{
+    width: 70%;
+    margin: 20px auto;
+    .sale{
+        font-size: 20px;
+        font-weight: 500;
+        
+    }
+    .view{
+        font-size: 12px;
+        color: #C0AC88;
+    }
+    .cat{
+        display: flex;
+        //justify-content: space-between;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+}

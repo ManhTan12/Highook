@@ -1,0 +1,150 @@
+.product-list{
+    margin-top: 115px;
+    .wapper{
+        .header{
+            color: white;
+            background-color: #C0AC8880;
+            min-height: 60px;
+            padding-top: 20px;
+            font-weight: 600;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .main{
+            width: 70%;
+            margin: 20px auto;
+            display: flex;
+            .sidebar{
+                flex: 1;
+                margin-right: 20px;
+                .filter-price{
+                    p{
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #777;
+                    }
+                    .small{
+                        background-color: rgba(0, 0, 0, .1);
+                        display: block;
+                        height: 3px;
+                        margin: 1em 0;
+                        max-width: 30px;
+                        width: 100%;
+                    }
+                    .price-slider{
+                        border-radius: 99px;
+                        height: 5px;
+                    }
+                    .bottom{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        button{
+                            background-color: #C0AC88;
+                            border-radius: 30px;
+                            color: white;
+                            font-weight: 600;
+                            border: none;
+                            padding: 5px 20px;
+                        }
+                        .price{
+                            display: flex;
+                            p{
+                                font-size: 14px;
+                                margin-right: 10px;
+                            }
+                            .number{
+                                color: #777;
+                                font-size: 14px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+                .filer{
+                    margin-top: 40px;
+                    max-width: 100%;
+                    .filter-color{
+                        max-width: 100%;
+                        p{
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                        .color{
+                            max-width: 100%;
+                            display: flex;
+                            
+                            .color-map{
+                                display: flex;
+                                gap: 30px;
+                                flex-wrap: wrap;
+                                margin-top: 20px;
+                                .color-item{
+                                    max-width: calc(25% - 5px);
+                                    display: flex;
+                                    gap: 5px;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    .color-cirle{
+                                        height: 32.4px;
+                                        width: 32.4px;
+                                        border-radius: 50%;
+                                        // border: 1px solid #000000;
+                                        cursor: pointer;
+                                    }&:hover{
+                                        border-radius:2px solid  #C0AC88;
+                                    }
+                                    .color-name{
+                                        font-size: 10px;
+                                        color: #434343;
+                                    }
+                                }
+
+                            }
+                            
+                        }
+                    }
+                    .filter-size{
+                        margin-top: 50px;
+                        max-width: 100%;
+                        .title{
+                            font-weight: 500;
+                            font-size: 18px;
+                            color: #434343;
+                            margin-bottom: 20px;
+                        }
+                        .size{
+                            max-width: 100%;
+                            .size-map{
+                                max-width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 15px;
+                                .size-item{
+                                    display: flex;
+                                    .size-input{
+                                        margin: 3px 10px 16px 4px;
+                                    }
+                                    .size-name{
+                                        font-size: 14.4px;
+                                        color: #434343;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .products{
+                flex: 3;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                
+            }
+        }
+    }
+}
