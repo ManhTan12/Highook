@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <div className="top">
-                <Link to={`/cart`} className="logo">
+                <Link to={`/`} className="logo">
                     <img src="https://highook.com/wp-content/uploads/2024/03/LOGO-HIGHOOK.png" alt="" className='logo-img' />
                 </Link>
                 <div className="cat">
@@ -65,9 +65,9 @@ const Navbar = () => {
                                 </div>
                             
                             <div className="cart-bottom">
-                                <div className="view">
+                                <Link to={`/cart`} className="view">
                                     VIEW CART
-                                </div>
+                                </Link>
                                 <div className="view">
                                     CHECK OUT
                                 </div>

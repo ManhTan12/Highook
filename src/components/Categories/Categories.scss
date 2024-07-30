@@ -58,7 +58,41 @@
         flex-wrap: nowrap;
         margin-top: 15px;
         width: 100%;
-
+        .swiper-button-next,
+        .swiper-button-prev {
+          color: black; /* Màu của các nút điều hướng */
+          width: 40px;
+          height: 40px;
+          background-color: white; /* Màu nền của các nút điều hướng */
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+      
+          &::after {
+            font-size: 20px; /* Kích thước của biểu tượng mũi tên */
+          }
+        }
+      
+        .swiper-button-next {
+          right: 20px; /* Khoảng cách từ bên phải */
+        }
+      
+        .swiper-button-prev {
+          left: 0px; /* Khoảng cách từ bên trái */
+        }
         
+    }:hover{
+        .swiper-button-next,
+        .swiper-button-prev{
+            opacity: 10;
+            background-color: #C0AC88;
+            color: white;
+        }
     }
+}
+
+.swiper-button-prev::after{
+    font-size: 22px;
 }

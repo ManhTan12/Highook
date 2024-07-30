@@ -184,6 +184,7 @@
                                 width: 20px;
                                 padding: 2px;
                                 box-shadow: 0 0 0 1px #d5d5d5;
+                                cursor: pointer;
                             }
                             
                         }
@@ -201,7 +202,7 @@
                         .form-bottom{
                             display: flex;
                             gap: 10px;
-                            
+                            cursor: pointer;
                             .value{
                                 color: #666666;
                                 font-size: 14px;
@@ -224,6 +225,9 @@
                                 padding: 10px 7px;
                                 border: 1px solid #666;
                                 border-right: 0 !important;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+
                                 cursor: pointer;
                             }
                             .number{
@@ -235,14 +239,17 @@
                                 padding: 10px 7px;
                                 border: 1px solid #666;
                                 cursor: pointer;
+                                border-top-right-radius: 20px;
+                                border-bottom-right-radius: 20px;
                             }
                         }
-                        .cart{
+                        .add-cart{
                             font-size: 16px;
                             font-weight: 700;
                             color: white;
-                            background-color: #C0AC88;
+                            background-color: black;
                             padding: 10px 20px;
+                            border-radius: 20px;
                             cursor: pointer;
                             &:hover{
                                 background-color: #afafaf;

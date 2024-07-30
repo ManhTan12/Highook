@@ -10,6 +10,9 @@ import Related from '../../components/Related/Related';
 const Product = () => {
     const [conut, setCount] = useState(0);
     const [isOpen, setIsOpen] = useState(false);
+    const [selectColor,setSelectColor] = useState(null);
+    const [selectSize,setSelectSize] = useState(null);
+
     const handleOpen = () =>{
         setIsOpen(!isOpen)
     }
@@ -67,7 +70,7 @@ const Product = () => {
                                     <div className="title">Color</div>
                                     <div className="form-top">
                                         {color.map((c) => (
-                                            <div className='value' type="text" style={{ backgroundColor: c.hexCode }} />
+                                            <div className='value' type="text" onClick={() => setSelectColor(c.name)} style={{ backgroundColor: c.hexCode,border: selectColor === c.name ? '3px solid #c8b288' : 'none' }} />
                                         ))}
                                     </div>
                                 </div>
@@ -75,7 +78,7 @@ const Product = () => {
                                     <div className="title">Size</div>
                                     <div className="form-bottom">
                                         {size.map((s) => (
-                                            <div className="value">{s.name}</div>
+                                            <div className="value" onClick={() => setSelectSize(s.name)} style={{border: selectSize === s.name ? '2px solid #c8b288' : '1px solid #d5d5d5' }}>{s.name}</div>
                                         ))}
                                     </div>
                                 </div>
@@ -85,7 +88,7 @@ const Product = () => {
                                         <div className="number">{conut}</div>
                                         <div className="up" onClick={() => handleCount("inc")}>+</div>
                                     </div>
-                                    <div className="cart">ADD TO CART</div>
+                                    <div className="add-cart">ADD TO CART</div>
                                 </div>
                                 <div className="paypay">
                                     <img src="https://euro-unit.com/images/paypalex.png" alt="" />

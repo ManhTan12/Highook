@@ -1,12 +1,16 @@
 import React from 'react';
 import './Product.scss'
 import { HeartOutlined} from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 const Product = ({item}) => {
+
+  
+
   return (
     <div className='product'>
         <div className="item">
-          <img src={item.img} alt=""/>
+          <Link to={`/product/${item.id}`}><img src={item.img} alt=""/></Link>
           {item.isStock === "No" && <div className='out-of-stock'>OUT OF STOCK</div>}
           {item.isNew && <p className='isNew'>{item.isNew}</p>}
           <div className="tym">

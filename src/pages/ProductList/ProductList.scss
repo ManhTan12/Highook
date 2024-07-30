@@ -88,12 +88,24 @@
                                     flex-direction: column;
                                     justify-content: center;
                                     align-items: center;
+                                    cursor: pointer;
                                     .color-cirle{
+                                position: relative;
+                                        border: 1px solid rgb(208, 208, 208);
                                         height: 32.4px;
                                         width: 32.4px;
                                         border-radius: 50%;
                                         // border: 1px solid #000000;
                                         cursor: pointer;
+                                        .checkmark{
+                                            position: absolute;
+                                            color: black;
+                                            font-size: 20px;
+                                            position: absolute;
+                                            top: -10px;
+                                            left: 20px;
+                                            color: green;
+                                        }
                                     }&:hover{
                                         border-radius:2px solid  #C0AC88;
                                     }
@@ -101,7 +113,10 @@
                                         font-size: 10px;
                                         color: #434343;
                                     }
+                                    
                                 }
+                                
+                                
 
                             }
                             
